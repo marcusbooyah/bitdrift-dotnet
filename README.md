@@ -17,9 +17,13 @@ You can also use it with ILogger
 ```csharp
 using BitDrift;
 
+// startup
 builder.Logging.AddBitDrift(
     apiKey:          "YOUR_API_KEY",
     sessionStrategy: SessionStrategy.Fixed);
+
+// use injected ILogger
+Logger.LogInformation("Hello, world!");
 ```
 
 ## Environment setup
