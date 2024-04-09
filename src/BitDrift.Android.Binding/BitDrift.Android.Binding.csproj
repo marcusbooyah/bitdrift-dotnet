@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+    <AndroidGenerateResourceDesigner>false</AndroidGenerateResourceDesigner>
+    <AndroidBuildAar>True</AndroidBuildAar>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="native" />
+    <None Remove="AAR" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AndroidLibrary Include="$(MSBuildThisFileDirectory)native/bitdrift/build/outputs/aar/bitdrift-release.aar">
+      <Link>bitdrift-release.aar</Link>
+      <Bind>True</Bind>
+      <Pack>True</Pack>
+      <Visible>False</Visible>
+    </AndroidLibrary>
+  </ItemGroup>
+
+  <ItemGroup>
+    <AndroidLibrary Update="$(MSBuildThisFileDirectory)AAR/capture-0.9.113.aar" Bind="false" />
+    <AndroidLibrary Update="$(MSBuildThisFileDirectory)AAR/play-services-appset-16.0.2.aar" Bind="false" />
+    <AndroidLibrary Update="$(MSBuildThisFileDirectory)AAR/play-services-base-18.0.1.aar" Bind="false" />
+    <AndroidLibrary Update="$(MSBuildThisFileDirectory)AAR/play-services-basement-18.1.0.aar" Bind="false" />
+    <AndroidLibrary Update="$(MSBuildThisFileDirectory)AAR/play-services-tasks-18.0.2.aar" Bind="false" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <AndroidProjectDir>$(MSBuildThisFileDirectory)native</AndroidProjectDir>
+    <AndroidProjectModule>:bitdrift</AndroidProjectModule>
+  </PropertyGroup>
+
+  <Import Project="$(MSBuildThisFileDirectory)../../eng/Common.android.targets" />
+</Project>

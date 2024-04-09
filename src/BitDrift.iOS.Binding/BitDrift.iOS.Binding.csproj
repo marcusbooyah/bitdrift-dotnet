@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFrameworks>net8.0-ios</TargetFrameworks>
+        <IsBindingProject>true</IsBindingProject>
+        <NoBindingEmbedding>true</NoBindingEmbedding>
+        <OutputType>Library</OutputType>
+        <XcodeProject>$(MSBuildThisFileDirectory)native/BitDriftProxy.xcodeproj</XcodeProject>
+        <XcodeBuildXCFramework>true</XcodeBuildXCFramework>
+        <ObjSharpieBind>True</ObjSharpieBind>
+        <ObjSharpieBindNamespace>BitDriftModule</ObjSharpieBindNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Remove="native" />
+    </ItemGroup>
+  
+    <ItemGroup>
+        <!-- <ObjcBindingApiDefinition Include="$(MSBuildThisFileDirectory)native/.build/Binding/ApiDefinitions.cs" /> -->
+        <ObjcBindingApiDefinition Include="$(MSBuildThisFileDirectory)ApiDefinitions.cs" />
+        <NativeReference Include="$(MSBuildThisFileDirectory)native/.build/BitDriftProxy.xcframework">
+            <Kind>Framework</Kind>
+            <SmartLink>True</SmartLink>
+            <ForceLoad>True</ForceLoad>
+        </NativeReference>
+    </ItemGroup>
+
+    <Import Project="$(MSBuildThisFileDirectory)../../eng/Common.macios.targets" />
+</Project>

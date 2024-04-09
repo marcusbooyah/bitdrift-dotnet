@@ -1,0 +1,42 @@
+{
+  "originHash" : "3d5b89f89db1b3dd90c19041f1ac98ad2ab48574ec8f68378d9cfff2f4976450",
+  "pins" : [
+    {
+      "identity" : "capture-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bitdriftlabs/capture-ios",
+      "state" : {
+        "revision" : "67e41532216f3c0fb5ac8b6e95c8387d58d133d5",
+        "version" : "0.9.114"
+      }
+    },
+    {
+      "identity" : "cocoalumberjack",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CocoaLumberjack/CocoaLumberjack.git",
+      "state" : {
+        "revision" : "4b8714a7fb84d42393314ce897127b3939885ec3",
+        "version" : "3.8.5"
+      }
+    },
+    {
+      "identity" : "swift-log",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-log",
+      "state" : {
+        "revision" : "e97a6fcb1ab07462881ac165fdbb37f067e205d5",
+        "version" : "1.5.4"
+      }
+    },
+    {
+      "identity" : "swiftybeaver",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyBeaver/SwiftyBeaver.git",
+      "state" : {
+        "revision" : "1080914828ef1c9ca9cd2bad50667b3d847dabff",
+        "version" : "2.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}
