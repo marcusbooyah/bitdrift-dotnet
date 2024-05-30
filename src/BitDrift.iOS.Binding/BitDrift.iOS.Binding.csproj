@@ -4,7 +4,7 @@
         <IsBindingProject>true</IsBindingProject>
         <NoBindingEmbedding>true</NoBindingEmbedding>
         <OutputType>Library</OutputType>
-        <XcodeProject>$(MSBuildThisFileDirectory)native/BitDriftProxy.xcodeproj</XcodeProject>
+        <XcodeProject>$(MSBuildThisFileDirectory)native/BdProxy.xcodeproj</XcodeProject>
         <XcodeBuildXCFramework>true</XcodeBuildXCFramework>
         <ObjSharpieBind>True</ObjSharpieBind>
         <ObjSharpieBindNamespace>BitDriftModule</ObjSharpieBindNamespace>
@@ -17,7 +17,7 @@
     <ItemGroup>
         <!-- <ObjcBindingApiDefinition Include="$(MSBuildThisFileDirectory)native/.build/Binding/ApiDefinitions.cs" /> -->
         <ObjcBindingApiDefinition Include="$(MSBuildThisFileDirectory)ApiDefinitions.cs" />
-        <NativeReference Include="$(MSBuildThisFileDirectory)native/.build/BitDriftProxy.xcframework">
+        <NativeReference Include="$(MSBuildThisFileDirectory)native/.build/BdProxy.xcframework">
             <Kind>Framework</Kind>
             <SmartLink>True</SmartLink>
             <ForceLoad>True</ForceLoad>
