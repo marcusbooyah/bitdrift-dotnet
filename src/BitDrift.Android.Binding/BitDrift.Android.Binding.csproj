@@ -23,10 +23,6 @@
 
   <ItemGroup>
     <AndroidLibrary Update="$(MSBuildThisFileDirectory)AAR/capture-0.9.113.aar" Bind="false" />
-    <AndroidLibrary Update="$(MSBuildThisFileDirectory)AAR/play-services-appset-16.0.2.aar" Bind="false" />
-    <AndroidLibrary Update="$(MSBuildThisFileDirectory)AAR/play-services-base-18.0.1.aar" Bind="false" />
-    <AndroidLibrary Update="$(MSBuildThisFileDirectory)AAR/play-services-basement-18.1.0.aar" Bind="false" />
-    <AndroidLibrary Update="$(MSBuildThisFileDirectory)AAR/play-services-tasks-18.0.2.aar" Bind="false" />
   </ItemGroup>
 
   <PropertyGroup>

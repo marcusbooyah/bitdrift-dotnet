@@ -14,9 +14,20 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
-		<PackageReference Include="Microsoft.Maui.Essentials" Version="8.0.14" />
-		<PackageReference Include="Square.OkHttp3" Version="4.12.0" Condition="$(TargetFramework.Contains('android'))" />
+		<PackageReference Include="Microsoft.Maui.Essentials" Version="8.0.21" />
 		<PackageReference Include="Xamarin.Essentials" Version="1.8.1" />
+	</ItemGroup>
+
+	<!-- Android specific packages -->
+	<ItemGroup Condition="$(TargetFramework.Contains('android'))" > 
+		<PackageReference Include="Square.OkHttp3" Version="4.12.0" />
+		<PackageReference Include="Xamarin.AndroidX.Core" Version="1.13.0.1" />
+		<PackageReference Include="Xamarin.AndroidX.Collection" Version="1.4.0.3" />
+		<PackageReference Include="Xamarin.AndroidX.Collection.Ktx" Version="1.4.0.2" />
+		<PackageReference Include="Xamarin.AndroidX.Activity.Ktx" Version="1.9.0.1" />
+		<PackageReference Include="Xamarin.GooglePlayServices.AppSet" Version="16.0.2.10" />
+		<PackageReference Include="Xamarin.GooglePlayServices.Base" Version="118.3.0.1" />
+		<PackageReference Include="Xamarin.GooglePlayServices.Tasks" Version="118.1.0.1" />
 	</ItemGroup>
 
 	<ItemGroup>
