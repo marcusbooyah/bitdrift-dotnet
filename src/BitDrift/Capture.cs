@@ -28,6 +28,8 @@ public static partial class Capture
         }
 
         ConfigureNative(apiKey, url, sessionStrategy.ToNativeString());
+
+        IsConfigured = true;
     }
     /// <summary>
     /// Adds a field to Capture with the specified key and value.

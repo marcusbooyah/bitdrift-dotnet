@@ -15,3 +15,13 @@
 // FOUNDATION_EXPORT const unsigned char BdProxyVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <BdProxy/PublicHeader.h>
+
+NS_INLINE NSException * _Nullable tryBlock(void(^_Nonnull tryBlock)(void)) {
+    @try {
+        tryBlock();
+    }
+    @catch (NSException *exception) {
+        return exception;
+    }
+    return nil;
+}
