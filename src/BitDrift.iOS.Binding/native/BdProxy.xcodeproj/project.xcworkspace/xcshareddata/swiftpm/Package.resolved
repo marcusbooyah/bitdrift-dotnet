@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/bitdriftlabs/capture-ios",
       "state" : {
-        "revision" : "a663e335d47d6d408057383904067e5eec9d66f4",
-        "version" : "0.9.118"
+        "revision" : "48fa6091e86deeab1cd94f3e2a5a98955d877376",
+        "version" : "0.14.2"
       }
     },
     {
@@ -24,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-log",
       "state" : {
-        "revision" : "e97a6fcb1ab07462881ac165fdbb37f067e205d5",
-        "version" : "1.5.4"
+        "revision" : "9cb486020ebf03bfa5b5df985387a14a98744537",
+        "version" : "1.6.1"
       }
     },
     {
